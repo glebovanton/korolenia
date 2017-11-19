@@ -1,0 +1,70 @@
+/* font-family: "AleksandraCRegular"; */
+/*@font-face {
+    font-family: "AleksandraCRegular";
+    src: url("../fonts/AleksandraCRegular/AleksandraCRegular.eot");
+    src: url("../fonts/AleksandraCRegular/AleksandraCRegular.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/AleksandraCRegular/AleksandraCRegular.woff") format("woff"),
+    url("../fonts/AleksandraCRegular/AleksandraCRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}*/
+@font-face {
+    font-family: "Catorze27style1";
+    src: url("../fonts/catorze27style1/catorze27style1.eot");
+    src: url("../fonts/catorze27style1/catorze27style1.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/catorze27style1/catorze27style1.woff") format("woff"),
+    url("../fonts/catorze27style1/catorze27style1.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Katona I";
+    src: url("../fonts/Katona1/katona-i.eot");
+    src: url("../fonts/Katona1/katona-i.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/Katona1/katona-i.woff") format("woff"),
+    url("../fonts/Katona1/Katona I.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/*@font-face {
+    font-family: "violet";
+    src: url("../fonts/violet/violet.eot");
+    src: url("../fonts/violet/violet.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/violet/violet.woff2") format("woff2"),
+    url("../fonts/violet/violet.woff") format("woff"),
+    url("../fonts/violet/violet.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}*/
+@font-face {
+    font-family: 'Violet';
+    src: url('../fonts/violet/Violet.eot');
+    src: url('../fonts/violet/Violet.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/violet/Violet.woff2') format('woff2'),
+    url('../fonts/violet/Violet.woff') format('woff'),
+    url('../fonts/violet/Violet.ttf') format('truetype'),
+    url('../fonts/violet/Violet.svg#Violet') format('svg');
+}
+
+@font-face {
+    font-family: "Fashion";
+    src: url("../fonts/Fashion/Fashion.eot");
+    src: url("../fonts/Fashion/Fashion.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/Fashion/Fashion.woff2") format("woff2"),
+    url("../fonts/Fashion/Fashion.woff") format("woff"),
+    url("../fonts/Fashion/Fashion.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "RonduitCapitals";
+    src: url("../fonts/RonduitCapitals/RonduitCapitals-Light.eot");
+    src: url("../fonts/RonduitCapitals/RonduitCapitals-Light.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/RonduitCapitals/RonduitCapitals-Light.woff2") format("woff2"),
+    url("../fonts/RonduitCapitals/RonduitCapitals-Light.woff") format("woff"),
+    url("../fonts/RonduitCapitals/RonduitCapitals-Light.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
