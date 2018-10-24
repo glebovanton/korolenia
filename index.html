@@ -8,31 +8,69 @@
     <meta name="author" content="Елена Короленя">
     <title>Елена Короленя ведущая детских и взрослых праздников</title>
 
+
     <link href="css/bootstrap.css" rel="stylesheet">
 
     <link href="css/slidefolio.css" rel="stylesheet">
 
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
     <link href="css/fonts.css" rel="stylesheet">
-    <!-- VK Widget -->
-    <script type="text/javascript" src="//vk.com/js/api/openapi.js?150"></script>
 
+    <script src="js/jquery.js"></script>
+    <!--    <script src="js/jquery.let_it_snow.js"></script>-->
+    <script src="js/jquery-scrolltofixed-min.js"></script>
+    <script src="js/jquery.vegas.js"></script>
+    <script src="js/jquery.mixitup.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script>
+        /*        $(document).ready( function() {
+                    $("canvas.snow").let_it_snow({
+                        windPower: 3,
+                        speed: 1,
+                        count: 25,
+                        size: 10,
+                        image: "img/white-snowflake.png"
+                    });
+                    $(".snowWindPower").on("change", function () {
+                        $("canvas.snow").trigger("letItSnow", ["windPower", parseInt($(this).val())]);
+                    });
+
+                });*/
+
+    </script>
 </head>
 <body>
 
+
+<!--Preloader-->
+<div class="preloader">
+    <div class="mic">
+        <div class="round1"></div>
+        <div class="korpus"></div>
+    </div>
+
+</div>
+
+<!--<img src="img/white-snowflake.png" style="display: none" id="lis_flake"/>-->
+<!--<canvas width="100%" height="100%" class="flare"></canvas>-->
+<canvas width="100%" height="100%" class="snow"></canvas>
+<!--<canvas width="100%" height="100%" class="snowWindPower"></canvas>-->
+
+<!--<div class="wrapper">-->
 <div id="top" class="header">
     <div class="vert-text">
         <img alt="Company Logo" src="./img/logo.png"/>
         <h1><em>Елена Короленя</em></h1>
         <h2><em>Ведущая мероприятий</em></h2>
-        <h3><em>Праздники,юбилеи,свадьбы,детские игровые программы,корпоративные мероприятия</em></h3>
+        <h3><em>Праздники, юбилеи, свадьбы, детские игровые программы, корпоративные мероприятия</em></h3>
         <ul class="list-inline">
             <li><a href="https://facebook.com/profile.php?id=100002702117550" target="_blank"
                    class="fa fa-facebook fa-2x"></a></li>
             <li><a href="https://vk.com/id32079246" target="_blank" class="fa fa-vk fa-2x"></a></li>
             <!--<li><a href="mailto:lena0808@tut.by" target="_blank" class="fa fa-envelope-o fa-3x"></a></li>-->
             <li><a href="skype:alena088088?call" target="_blank" class="fa fa-skype fa-2x"></a></li>
-            <li><a href="https://www.instagram.com/elena_korolena/" target="_blank" class="fa fa-instagram fa-2x"></a>
+            <li><a href="https://www.instagram.com/elena_korolena/" target="_blank"
+                   class="fa fa-instagram fa-2x"></a>
             </li>
         </ul>
 
@@ -54,7 +92,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a href="#contact" class="navbar-brand"><i class="fa fa-phone"></i>&nbsp+375(29)5563990</a>
+                <a href="tel:+375295563990" class="navbar-brand"><i class="fa fa-phone"></i>&nbsp+375(29)5563990</a>
             </div>
             <div class="collapse navbar-collapse" id="mobilemenu">
                 <ul class="nav navbar-nav navbar-right text-center">
@@ -76,14 +114,16 @@
             <div class="col-md-8 col-md-offset-2 text-center">
                 <h2>Обо мне</h2>
                 <p class="lead">
-                    В счастливый день Вашего Торжества предлагаю Вам свои услуги: &nbsp услуги ведущей, организатора и
+                    В счастливый день Вашего Торжества предлагаю Вам свои услуги: &nbsp услуги ведущей, организатора
+                    и
                     распорядителя свадеб, юбилеев, корпоративных мероприятий и любых вечеринок.
                     Вместе с DJ: профессиональное оборудование, дискотека на любой вкус.
                     <br><br>
                     Сплотить Ваш коллектив и вдохновить его на новые свершения поможет Корпоративный
                     праздник! Корпоратив - хороший повод, чтобы разбавить череду рабочих будней, хорошенько
                     отдохнуть, сбросить напряжение и как следует повеселиться!
-                    ВАШ ПРАЗДНИК ПРЕВРАТИТСЯ в настоящее чудо, ПОТОМУ ЧТО мы обеспечим качественную организацию, подбор
+                    ВАШ ПРАЗДНИК ПРЕВРАТИТСЯ в настоящее чудо, ПОТОМУ ЧТО мы обеспечим качественную организацию,
+                    подбор
                     артистов, оригинальные и современные конкурсы, качественный и мощный звук.
                     <br>
                     <i class="fa fa-gift" aria-hidden="true"></i><i class="fa fa-gift" aria-hidden="true"></i>
@@ -115,7 +155,7 @@
                 <div class="service-item">
                     <i class="service-icon fa fa-male fa-3x"></i><i class="service-icon fa fa-female fa-3x"></i>
                     <h3>Свадьбы и Юбилеи</h3>
-                    <p>
+
                     <ul>
                         <li>Ведущий и ди-джей</li>
                         <li>Звуковое и световое оборудование</li>
@@ -125,7 +165,7 @@
                         <li>Запись песни на праздник</li>
                         <li>Фото на память</li>
                     </ul>
-                    </p>
+
                     <p>200-500</p>
                     <a href="#contact">подробнее</a>
                 </div>
@@ -134,7 +174,7 @@
                 <div class="service-item">
                     <i class="service-icon fa fa-users fa-3x"></i>
                     <h3>Корпоративные мероприятия</h3>
-                    <p>
+
                     <ul>
                         <li>Ведущий и ди-джей</li>
                         <li>Звуковое и световое оборудование</li>
@@ -146,7 +186,7 @@
                         <li>Фото на память</li>
                         <li>Запись корпоративных песен</li>
                     </ul>
-                    </p>
+
                     <p>200-400</p>
                     <a href="#contact">подробнее</a>
                 </div>
@@ -155,7 +195,6 @@
                 <div class="service-item">
                     <i class="service-icon fa fa-birthday-cake fa-3x"></i>
                     <h3>Игровые программы</h3>
-                    <p>
                     <ul>
                         <li>Звуковое и световое оборудование</li>
                         <li>Анимация и ростовые куклы</li>
@@ -164,7 +203,6 @@
                         <li>Вручение подарков</li>
                         <li>Фото на память</li>
                     </ul>
-                    </p>
                     <p>25-100</p>
                     <a href="#contact">подробнее</a>
                 </div>
@@ -180,7 +218,7 @@
             <div class="col-md-4 col-md-offset-4 text-center">
                 <h2>Фото</h2>
                 <h3>
-                    <span class="filter label label-default" data-filter="все">Все</span>
+                    <span class="filter label label-default active" data-filter="все">Все</span>
                     <span class="filter label label-default" data-filter="праздники">Праздники</span>
                     <span class="filter label label-default" data-filter="добро">Добро</span>
                     <span class="filter label label-default" data-filter="сцена">Сцена</span>
@@ -191,28 +229,28 @@
         <div class="row">
             <div class="gallery">
                 <ul id="Grid" class="gcontainer">
-                    <li class="col-xs-12 col-sm-6 col-md-4 mix добро все" data-cat="добро">
+                    <li class="col-xs-12 col-sm-6 col-md-3 mix добро все" data-cat="добро">
                         <a data-toggle="modal" data-target="#good3" class="mix-cover">
                             <img class="horizontal" src="img/good3.jpg" alt="Ведущая">
                             <span class="overlay"><span class="valign"></span>
                                 <span class="title">Благотворительность</span></span>
                         </a>
                     </li>
-                    <li class="col-xs-12 col-sm-6 col-md-4 mix праздники все" data-cat="праздники">
+                    <li class="col-xs-12 col-sm-6 col-md-3 mix праздники все" data-cat="праздники">
                         <a data-toggle="modal" data-target="#fiesta1" class="mix-cover">
                             <img class="horizontal" src="img/fiesta1.jpg" alt="Праздники">
                             <span class="overlay"><span class="valign"></span><span
                                     class="title">Праздники</span></span>
                         </a>
                     </li>
-                    <li class="col-xs-12 col-sm-6 col-md-4 mix сцена все" data-cat="сцена">
+                    <li class="col-xs-12 col-sm-6 col-md-3 mix сцена все" data-cat="сцена">
                         <a data-toggle="modal" data-target="#stage2" class="mix-cover green">
                             <img class="vertical" src="img/stage2.jpg" alt="Юбилеи">
                             <span class="overlay"><span class="valign"></span>
                                 <span class="title">Ведение</span></span>
                         </a>
                     </li>
-                    <li class="col-xs-12 col-sm-6 col-md-4 mix праздники все" data-cat="праздники">
+                    <li class="col-xs-12 col-sm-6 col-md-3 mix праздники все" data-cat="праздники">
                         <a data-toggle="modal" data-target="#fiesta3" class="mix-cover">
                             <img class="horizontal" src="img/fiesta3.jpg" alt="Конкурсы">
                             <span class="overlay"><span class="valign"></span><span
@@ -221,7 +259,7 @@
                     </li>
 
 
-                    <li class="col-xs-12 col-sm-6 col-md-4 mix добро все" data-cat="добро">
+                    <li class="col-xs-12 col-sm-6 col-md-3 mix добро все" data-cat="добро">
                         <a data-toggle="modal" data-target="#good2" class="mix-cover">
                             <img class="horizontal" src="img/good2.jpg" alt="Корпаративы">
                             <span class="overlay"><span class="valign"></span><span
@@ -230,7 +268,7 @@
                     </li>
 
 
-                    <li class="col-xs-12 col-sm-6 col-md-4 mix сцена все" data-cat="сцена">
+                    <li class="col-xs-12 col-sm-6 col-md-3 mix сцена все" data-cat="сцена">
                         <a data-toggle="modal" data-target="#stage1" class="mix-cover green">
                             <img class="vertical" src="img/stage1.jpg" alt="Тамада">
                             <span class="overlay"><span class="valign"></span><span
@@ -239,7 +277,7 @@
                     </li>
 
 
-                    <li class="col-xs-12 col-sm-6 col-md-4 mix сцена все" data-cat="сцена">
+                    <li class="col-xs-12 col-sm-6 col-md-3 mix сцена все" data-cat="сцена">
                         <a data-toggle="modal" data-target="#stage3" class="mix-cover green">
                             <img class="vertical" src="img/stage3.jpg" alt="Профессионалы">
                             <span class="overlay"><span class="valign"></span><span
@@ -247,14 +285,14 @@
                         </a>
                     </li>
 
-                    <li class="col-xs-12 col-sm-6 col-md-4 mix праздники все" data-cat="праздники">
+                    <li class="col-xs-12 col-sm-6 col-md-3 mix праздники все" data-cat="праздники">
                         <a data-toggle="modal" data-target="#fiesta2" class="mix-cover">
                             <img class="horizontal" src="img/fiesta2.jpg" alt="Корпоративы">
                             <span class="overlay"><span class="valign"></span><span
                                     class="title">Веселье</span></span>
                         </a>
                     </li>
-                    <li class="col-xs-12 col-sm-6 col-md-4 mix добро все" data-cat="добро">
+                    <li class="col-xs-12 col-sm-6 col-md-3 mix добро все" data-cat="добро">
                         <a data-toggle="modal" data-target="#good1" class="mix-cover">
                             <img class="horizontal" src="img/good1.jpg" alt="Ведущая">
                             <span class="overlay"><span class="valign"></span><span
@@ -269,7 +307,8 @@
                         <div class="modal-content">
                             <div class="modal-header">
                                 <button type="button" class="close" data-dismiss="modal"
-                                        aria-hidden="true">&times;</button>
+                                        aria-hidden="true">&times;
+                                </button>
                                 <h4 class="modal-title text-center">Спектакли</h4>
                             </div>
                             <div class="modal-body">
@@ -283,7 +322,8 @@
                         <div class="modal-content">
                             <div class="modal-header">
                                 <button type="button" class="close" data-dismiss="modal"
-                                        aria-hidden="true">&times;</button>
+                                        aria-hidden="true">&times;
+                                </button>
                                 <h4 class="modal-title text-center">Веселье</h4>
                             </div>
                             <div class="modal-body">
@@ -297,7 +337,8 @@
                         <div class="modal-content">
                             <div class="modal-header">
                                 <button type="button" class="close" data-dismiss="modal"
-                                        aria-hidden="true">&times;</button>
+                                        aria-hidden="true">&times;
+                                </button>
                                 <h4 class="modal-title text-center">Сцена</h4>
                             </div>
                             <div class="modal-body">
@@ -311,7 +352,8 @@
                         <div class="modal-content">
                             <div class="modal-header">
                                 <button type="button" class="close" data-dismiss="modal"
-                                        aria-hidden="true">&times;</button>
+                                        aria-hidden="true">&times;
+                                </button>
                                 <h4 class="modal-title text-center">Добро</h4>
                             </div>
                             <div class="modal-body">
@@ -325,7 +367,8 @@
                         <div class="modal-content">
                             <div class="modal-header">
                                 <button type="button" class="close" data-dismiss="modal"
-                                        aria-hidden="true">&times;</button>
+                                        aria-hidden="true">&times;
+                                </button>
                                 <h4 class="modal-title text-center">Подарки</h4>
                             </div>
                             <div class="modal-body">
@@ -339,7 +382,8 @@
                         <div class="modal-content">
                             <div class="modal-header">
                                 <button type="button" class="close" data-dismiss="modal"
-                                        aria-hidden="true">&times;</button>
+                                        aria-hidden="true">&times;
+                                </button>
                                 <h4 class="modal-title text-center">Благотворительность</h4>
                             </div>
                             <div class="modal-body">
@@ -353,7 +397,8 @@
                         <div class="modal-content">
                             <div class="modal-header">
                                 <button type="button" class="close" data-dismiss="modal"
-                                        aria-hidden="true">&times;</button>
+                                        aria-hidden="true">&times;
+                                </button>
                                 <h4 class="modal-title text-center">Мероприятия</h4>
                             </div>
                             <div class="modal-body">
@@ -367,7 +412,8 @@
                         <div class="modal-content">
                             <div class="modal-header">
                                 <button type="button" class="close" data-dismiss="modal"
-                                        aria-hidden="true">&times;</button>
+                                        aria-hidden="true">&times;
+                                </button>
                                 <h4 class="modal-title text-center">Сцена дворца профсоюзов</h4>
                             </div>
                             <div class="modal-body">
@@ -381,7 +427,8 @@
                         <div class="modal-content">
                             <div class="modal-header">
                                 <button type="button" class="close" data-dismiss="modal"
-                                        aria-hidden="true">&times;</button>
+                                        aria-hidden="true">&times;
+                                </button>
                                 <h4 class="modal-title text-center">Сцена Национальной библиотеки Беларуси</h4>
                             </div>
                             <div class="modal-body">
@@ -403,93 +450,39 @@
             <div class="col-md-4 col-md-offset-4 text-center">
                 <h2>Контакты</h2>
                 <p><i class="fa fa-phone"></i>&nbsp+375(29)5563990</p>
+                <hr>
+            </div>
+            <div class="col-md-4 col-md-offset-4 text-center">
                 <ul class="list-inline">
                     <li><a href="https://facebook.com/profile.php?id=100002702117550" target="_blank"
                            class="fa fa-facebook fa-2x"></a></li>
                     <li><a href="https://vk.com/id32079246" target="_blank" class="fa fa-vk fa-2x"></a></li>
                     <!--<li><a href="mailto:lena0808@tut.by" target="_blank" class="fa fa-envelope-o fa-3x"></a></li>-->
                     <li><a href="skype:alena088088?call" target="_blank" class="fa fa-skype fa-2x"></a></li>
-                    <li><a href="https://www.instagram.com/elena_korolena/" target="_blank" class="fa fa-instagram fa-2x"></a>
+                    <li><a href="https://www.instagram.com/elena_korolena/" target="_blank"
+                           class="fa fa-instagram fa-2x"></a>
                     </li>
                 </ul>
-                <hr>
             </div>
-            <!--<div class="col-md-5 col-md-offset-3">
-
-                <form method="POST" id="contact-form" class="form-horizontal">
-                    <fieldset>
-                        <div class="form-group">
-                            <label class="col-sm-4 control-label" for="name">Ваше имя</label>
-                            <div class="col-sm-8">
-                                <input type="text" placeholder="Ваше имя" class="form-control" name="name" id="name">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label class="col-sm-4 control-label" for="email">Email адрес</label>
-                            <div class="col-sm-8">
-                                <input type="text" placeholder="Введите Ваш Email адрес" class="form-control"
-                                       name="email" id="email">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label class="col-sm-4 control-label" for="message">Ваше сообщение <br> или
-                                <br> телефон
-                            </label>
-                            <div class="col-sm-8">
-                                <textarea placeholder="Сообщение.  Оставьте свой телефон и мы Вам перезвоним!"
-                                          class="form-control" name="message"
-                                          id="message" rows="3"></textarea>
-                            </div>
-                        </div>
-                        &lt;!&ndash;<div class="form-group">
-                            <label class="col-sm-4 control-label" for="subject">Subject</label>
-                            <div class="col-sm-8">
-                                <input type="text" placeholder="Subject" class="form-control" name="subject"
-                                       id="subject">
-                            </div>
-                        </div>&ndash;&gt;
-
-                        <div class="col-sm-offset-4 col-sm-8">
-                            <button type="submit" class="btn btn-success">Отправить</button>
-                            <button type="reset" class="btn btn-primary">Выход</button>
-                        </div>
-                    </fieldset>
-                </form>
-
-            </div>-->
         </div>
     </div>
 </div>
+<!--</div>-->
 
-
-<!-- VK Widget -->
-<div id="vk_community_messages"></div>
-<script type="text/javascript">
-    VK.Widgets.CommunityMessages("vk_community_messages", 157071237, {expandTimeout: "20000",tooltipButtonText: "Есть вопрос?"});
-</script>
 
 <footer>
     <div class="container">
         <div class="row">
             <div class="col-md-6 col-md-offset-3 text-center">
                 <h2>Minsk</h2>
-                <em>Copyright &copy; Anton Glebov 2016</em>
+                <em>Copyright &copy; Anton Glebov 2016-2018</em>
             </div>
         </div>
     </div>
 </footer>
-
-<!--Виджет вконтакте-->
-<script type="text/javascript" src="//vk.com/js/api/openapi.js?150"></script>
+<!--</div>-->
 
 
-
-
-<script src="js/jquery.js"></script>
-<script src="js/jquery-scrolltofixed-min.js"></script>
-<script src="js/jquery.vegas.js"></script>
-<script src="js/jquery.mixitup.min.js"></script>
-<script src="js/jquery.validate.min.js"></script>
 <script src="js/script.js"></script>
 <script src="js/bootstrap.js"></script>
 
@@ -546,6 +539,18 @@
         $('#nav').scrollToFixed();
     });
 </script>
+
+<!--crisp-->
+<script type="text/javascript">window.$crisp = [];
+window.CRISP_WEBSITE_ID = "8e6c3e4e-0610-4b8e-8a58-2e31833f74e3";
+(function () {
+    d = document;
+    s = d.createElement("script");
+    s.src = "https://client.crisp.chat/l.js";
+    s.async = 1;
+    d.getElementsByTagName("head")[0].appendChild(s);
+})();</script>
+
 
 </body>
 </html>
