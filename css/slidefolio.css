@@ -1,13 +1,220 @@
 html, body {
+/*    font-family: Mountains of Christmas ,Helvetica ,sans-serif;*/
     font-family: Violet, Helvetica ,sans-serif;
+    font-style: normal !important;
     height: 100%;
     width: 100%;
-
 }
 *{
-    font-family: Violet,Helvetica ,sans-serif;
+/*    font-family: Mountains of Christmas ,Helvetica ,sans-serif;*/
+    font-family: Violet ,Helvetica ,sans-serif;
     font-style: normal !important;
 }
+ h2,.title,.modal-title{
+    font-family: Mountains of Christmas ,Helvetica ,sans-serif;!important;
+}
+
+#about, #portfolio, footer {
+    background-color: #e0fbfc;
+}
+
+/*.wrapper {
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}*/
+canvas {
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+
+}
+/*.header {
+    position: relative;
+}*/
+canvas.flare {
+    opacity: 0.5;
+}
+.snowWindPower {
+    padding: 10px;
+    width: 90px;
+    border: none;
+    border-radius: 3px;
+    font-size: 33px;
+    background: rgba(0, 0, 0, 0.31);
+    color: white;
+}
+
+/*Preloader*/
+
+.preloader {
+    position: fixed;
+    z-index: 10000;
+    width: 100%;
+    height: 100%;
+    background-color: aliceblue;
+    opacity: 0.6;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.mic {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    margin-top: 20%;
+    background-color: #c5fffa;
+    border-radius: 50%;
+
+}
+
+.korpus {
+    top: 75px;
+    left: 80px;
+    position: absolute;
+    border: 3px solid black;
+    border-top: transparent;
+    border-bottom-width: 10px;
+    width: 40px;
+    height: 90px;
+    border-radius: 10%;
+    z-index: 10001;
+}
+
+.korpus:before {
+    content: "";
+    position: absolute;
+    border: 2px solid black;
+    top: 12px;
+    left: 12px;
+    right: 12px;
+    bottom: 50px;
+}
+
+.round1, .round1:before, .round1:after {
+    border: 3px solid transparent;
+    border-radius: 50%;
+    z-index: 10001;
+}
+
+.round1 {
+    top: 10px;
+    left: 65px;
+    position: absolute;
+    z-index: 10001;
+    width: 70px;
+    height: 70px;
+
+    border-top-color: deeppink;
+    border-bottom-color: deeppink;
+    border-left-color: deeppink;
+    -webkit-animation: spin 3s infinite linear;
+    animation: spin 3s infinite linear;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.round1:before, .round1:after {
+    content: "";
+    position: absolute;
+}
+
+.round1:before {
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    border-top-color: red;
+    border-bottom-color: darkred;
+    -webkit-animation: antispin 1.5s infinite linear;
+    animation: antispin 1.5s infinite linear;
+}
+
+.round1:after {
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    border-top-color: #ff701c;
+    -webkit-animation: antispin .9s infinite linear;
+    animation: antispin .9s infinite linear;
+}
+
+.loaded .preloader {
+    display: none;
+}
+
+@-webkit-keyframes spin {
+    from {
+        -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+
+}
+
+@keyframes spin {
+    from {
+        -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+
+}
+
+@-webkit-keyframes antispin {
+    from {
+        -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(-360deg);
+        -ms-transform: rotate(-360deg);
+        transform: rotate(-360deg);
+    }
+
+}
+
+@keyframes antispin {
+    from {
+        -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(-360deg);
+        -ms-transform: rotate(-360deg);
+        transform: rotate(-360deg);
+    }
+
+}
+
+
+
+
+
 #about .fa-gift{
     color: rgba(143, 255, 127, 0.27);
 }
@@ -20,7 +227,7 @@ html, body {
     cursor: pointer;
 }
 
-.vegas-loading {
+/*.vegas-loading {
     border-radius: 10px;
     background: #000;
     background: rgba(0, 0, 0, 0.7);
@@ -31,7 +238,7 @@ html, body {
     top: 20px;
     width: 32px;
     z-index: 0;
-}
+}*/
 
 .vegas-overlay {
     background: transparent url(../img/overlay.png);
@@ -163,6 +370,11 @@ li, #contact p{
     border-bottom-color: #777777;
 }
 
+
+
+
+
+
 @media (max-width: 767px) {
     .navbar-new .navbar-nav .open .dropdown-menu > li > a {
         color: #777777;
@@ -254,6 +466,7 @@ text-align: left;
 }
 
 .service-item {
+    min-height: 450px;
     margin-bottom: 15px;
     background: #333333;
     padding: 10px;
@@ -403,7 +616,7 @@ img.placeholder {
 }
 
 .overlay span.title {
-    font-size: 30px;
+    font-size: 20px;
 }
 
 .overlay:hover i, .overlay:hover span.title {
@@ -420,13 +633,18 @@ span.valign {
 #contact {
     background: none repeat scroll 0 0 rgba(0, 0, 0, 0.79);
     color: #f1f1f1;
-    padding: 50px 0;
+    padding: 200px 0 50px ;
+
     border-top: 1px solid #D1D1D1 !important;
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#fff2f2f2', GradientType=0);
     *zoom: 1;
     -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);
     -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);
+}
+#contact .list-inline{
+    text-align: center;
+    font-size: 0.5em;
 }
 
 #team {
@@ -447,14 +665,17 @@ span.valign {
 }
 
 .modal-dialog {
-    width: 60% !important;
+    width: 100%;
 }
-
+@media (min-width:1040px){
+    .modal-dialog {
+        width: 60% }
+}
 /* Footer */
 
 footer {
     padding: 20px 0;
-    background: #f1f1f1;
+/*    background: #f1f1f1;*/
 }
 
 /* responsive */

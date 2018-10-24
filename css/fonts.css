@@ -8,6 +8,17 @@
     font-style: normal;
     font-weight: normal;
 }*/
+
+@font-face {
+    font-family: 'Mountains of Christmas';
+    src: url('../fonts/MountainsofChristmas/MountainsofChristmas-Regular.eot');
+    src: url('../fonts/MountainsofChristmas/MountainsofChristmas-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/MountainsofChristmas/MountainsofChristmas-Regular.woff2') format('woff2'),
+    url('../fonts/MountainsofChristmas/MountainsofChristmas-Regular.woff') format('woff'),
+    url('../fonts/MountainsofChristmas/MountainsofChristmas-Regular.svg#MountainsofChristmas-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
 @font-face {
     font-family: "Catorze27style1";
     src: url("../fonts/catorze27style1/catorze27style1.eot");
