@@ -31,15 +31,11 @@ $(document).ready(function () {
     });
 
     var sendPhp = function sendPhp() {
-        $.ajax(
-
-
-/*            {
+        $.ajax({
             type: "POST",
             url: "mail.php",
             data: $("#contact-form").serialize()
-        }*/
-        ).done(function () {
+        }).done(function () {
             window.scrollTo(0, 0);
             alert("Спасибо за заявку! Я обязательно в Вами свяжусь в ближайшее время!");
         });
@@ -54,4 +50,14 @@ $(document).ready(function () {
 //Аякс отправка форм
 
 
+/*$(window).load(function () {
+    /!* preloader*!/
+    setTimeout(function () {
+        $('body').addClass('loaded')
+    }, 1000);
+});*/
 
+jQuery(window).load(function() {
+        // will fade out the whole DIV that covers the website.
+	jQuery(".preloader").fadeOut("slow");
+});
